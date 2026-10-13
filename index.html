@@ -1,96 +1,93 @@
-<! DOCTYPE html>
+<!DOCTYPE html>
 <html lang="pt-br">
-<cabeça>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<título>Os Diários do Vampiro</título>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Os Diários do Vampiro</title>
 
-<estilo>
-corpo {
-família de fontes: Arial, sans-serif;
-margem: 0;
-Cor de fundo: #130d18;
-Cor: branco;
-        }
+<style>
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  background: #130d18;
+  color: white;
+}
 
-cabeçalho {
-Cor de Fundo: #310d20;
-Alinhar texto: centro;
-Almofadamento: 35px;
-        }
+header {
+  background: #310d20;
+  text-align: center;
+  padding: 35px;
+}
 
-        h1 {
-Cor: #e4b4c6;
-        }
+h1 {
+  color: #e4b4c6;
+}
 
-principal {
-largura máxima: 900px;
-Margem: 25px auto;
-preenchimento de bolsa: 20px;
-        }
+main {
+  max-width: 900px;
+  margin: 25px auto;
+  padding: 20px;
+}
 
-        .personagem {
-Cor de Fundo: #281a2b;
-preenchimento de bolsa: 20px;
-margem-fundo: 20px;
-Raio da fronteira: 12px;
-        }
+.personagem {
+  background: #281a26;
+  padding: 20px;
+  margin: 20px 0;
+  border-radius: 12px;
+}
 
-botão {
-Cor de fundo: #8b244b;
-Cor: branco;
-fronteira: nenhuma;
-acolchoamento: 10px 15px;
-Raio da borda: 8px;
-cursor: ponteiro;
-        }
+button {
+  background: #8b244b;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 8px;
+  cursor: pointer;
+}
 
-        footer {
-Alinhar texto: centro;
-preenchimento de bolsa: 20px;
-Cor: #e4b4c6;
-        }
-</estilo>
-</cabeça>
+footer {
+  text-align: center;
+  padding: 20px;
+  color: #e4b4c6;
+}
+</style>
+</head>
 
-<corpo>
-<cabeçalho>
-<h1>Os Diários 🩸Vampíricos </h1>
-        <p>Um blog sobre vampiros, mistérios e romances</p>
-</cabeçalho>
+<body>
+<header>
+  <h1>🩸 Os Diários do Vampiro</h1>
+  <p>Um blog sobre vampiros, mistérios e romances</p>
+</header>
 
-<principal>
-        <section class="personagem">
-            <h2>Elena Gilbert</h2>
-            <p>Elena é uma jovem que tem sua vida transformada
-            ao conhecer os irmãos Salvatore.</p>
-<botão onclick="curtir(this)">❤️ <span>0</span></botão>
-</seção>
+<main>
+  <section class="personagem">
+    <h2>Elena Gilbert</h2>
+    <p>Elena é uma jovem que tem sua vida transformada ao conhecer os irmãos Salvatore.</p>
+    <button onclick="curtir(this)">❤️ Curtir <span>0</span></button>
+  </section>
 
-        <section class="personagem">
-            <h2>Stefan Salvatore</h2>
-            <p>Stefan é um vampiro que tenta viver sem machucar
-Pessoas e luta para controlar seus instintos.</p>
-<botão onclick="curtir(this)">❤️ <span>0</span></botão>
-</seção>
+  <section class="personagem">
+    <h2>Stefan Salvatore</h2>
+    <p>Stefan é um vampiro que tenta viver sem machucar pessoas e luta para controlar seus instintos.</p>
+    <button onclick="curtir(this)">❤️ Curtir <span>0</span></button>
+  </section>
 
-        <section class="personagem">
-            <h2>Damon Salvatore</h2>
-            <p>Damon é intenso, sarcástico e imprevisível,
-            mas também demonstra sentimentos profundos.</p>
-<botão onclick="curtir(this)">❤️ <span>0</span></botão>
-</seção>
-</principal>
+  <section class="personagem">
+    <h2>Damon Salvatore</h2>
+    <p>Damon é intenso, sarcástico e imprevisível, mas também demonstra sentimentos profundos.</p>
+    <button onclick="curtir(this)">❤️ Curtir <span>0</span></button>
+  </section>
+</main>
 
-<rodape>
-        <p>Blog criado para uma atividade escolar.</p>
-</rodapé>
+<footer>
+  Blog criado para uma atividade escolar.
+</footer>
 
-<roteiro>
-função curtir(botao) {
-seja contador = botao.querySelector("sopen");
-            contador.textContent = Number(contador.textContent) + 1;
-        }
-</roteiro>
-</corpo>
+<script>
+function curtir(botao) {
+  const contador = botao.querySelector("span");
+  contador.textContent = Number(contador.textContent) + 1;
+}
+</script>
+</body>
 </html>
