@@ -1,0 +1,27 @@
+corpo {
+família de fontes: Arial, sans-serif;
+cor de fundo: #fce4ec;
+Cor: #333;
+margem: 0;
+preenchimento de bolsa: 20px;
+}
+
+h1, h2 {
+Cor: #8e2455;
+}
+
+.personagem {
+Cor de Fundo: Branco;
+Acolchoamento: 15px;
+Margem: 15px 0;
+Raio da borda: 10px;
+}
+
+botão {
+cor de fundo: #e91e63;
+Cor: branco;
+fronteira: nenhuma;
+Enchimento de Acolchoamento: 10px;
+Raio da borda: 8px;
+cursor: ponteiro;
+}
