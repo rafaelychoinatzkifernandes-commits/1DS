@@ -1,0 +1,96 @@
+<! DOCTYPE html>
+<html lang="pt-br">
+<cabeça>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<título>Os Diários do Vampiro</título>
+
+<estilo>
+corpo {
+família de fontes: Arial, sans-serif;
+margem: 0;
+Cor de fundo: #130d18;
+Cor: branco;
+        }
+
+cabeçalho {
+Cor de Fundo: #310d20;
+Alinhar texto: centro;
+Almofadamento: 35px;
+        }
+
+        h1 {
+Cor: #e4b4c6;
+        }
+
+principal {
+largura máxima: 900px;
+Margem: 25px auto;
+preenchimento de bolsa: 20px;
+        }
+
+        .personagem {
+Cor de Fundo: #281a2b;
+preenchimento de bolsa: 20px;
+margem-fundo: 20px;
+Raio da fronteira: 12px;
+        }
+
+botão {
+Cor de fundo: #8b244b;
+Cor: branco;
+fronteira: nenhuma;
+acolchoamento: 10px 15px;
+Raio da borda: 8px;
+cursor: ponteiro;
+        }
+
+        footer {
+Alinhar texto: centro;
+preenchimento de bolsa: 20px;
+Cor: #e4b4c6;
+        }
+</estilo>
+</cabeça>
+
+<corpo>
+<cabeçalho>
+<h1>Os Diários 🩸Vampíricos </h1>
+        <p>Um blog sobre vampiros, mistérios e romances</p>
+</cabeçalho>
+
+<principal>
+        <section class="personagem">
+            <h2>Elena Gilbert</h2>
+            <p>Elena é uma jovem que tem sua vida transformada
+            ao conhecer os irmãos Salvatore.</p>
+<botão onclick="curtir(this)">❤️ <span>0</span></botão>
+</seção>
+
+        <section class="personagem">
+            <h2>Stefan Salvatore</h2>
+            <p>Stefan é um vampiro que tenta viver sem machucar
+Pessoas e luta para controlar seus instintos.</p>
+<botão onclick="curtir(this)">❤️ <span>0</span></botão>
+</seção>
+
+        <section class="personagem">
+            <h2>Damon Salvatore</h2>
+            <p>Damon é intenso, sarcástico e imprevisível,
+            mas também demonstra sentimentos profundos.</p>
+<botão onclick="curtir(this)">❤️ <span>0</span></botão>
+</seção>
+</principal>
+
+<rodape>
+        <p>Blog criado para uma atividade escolar.</p>
+</rodapé>
+
+<roteiro>
+função curtir(botao) {
+seja contador = botao.querySelector("sopen");
+            contador.textContent = Number(contador.textContent) + 1;
+        }
+</roteiro>
+</corpo>
+</html>
